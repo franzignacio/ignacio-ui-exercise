@@ -1,0 +1,51 @@
+<style>
+	body {
+		margin-left:20px;
+		background-color:#EEEEEE;
+	}
+	
+	.btn {
+		background-color:#00b359;
+		padding:13px 50px 18px 50px;
+		color:white;
+		box-shadow: 2px 2px 3px gray;
+		border-radius: 0px 5px 5px 0px;
+		font-size:20px;
+		text-shadow:1px 1px 2px black;
+		border:none;
+		outline:none;
+	}
+	
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		.btn {
+			padding:16px 50px 17px 50px;
+		}
+	}
+	
+	.check {
+		background-color:black;
+		border-radius:5px 0px 0px 5px;
+		padding:12px 20px 17px 20px;
+		box-shadow: 0px 2px 3px gray;
+		display:inline;
+		position:relative;
+		color:white;
+		font-weight:bold;
+		font-size:20px;
+		border:none;
+		outline:none;
+	}
+	
+	.check::before{
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		top: 20px;
+		left: -7px;
+		background: black;
+		transform: rotate(45deg);
+	}
+</style>
+
+<button class="check"> &#10004;</button><button class="btn"> Done </button>
